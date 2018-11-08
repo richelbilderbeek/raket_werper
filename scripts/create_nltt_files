@@ -8,7 +8,7 @@
 #SBATCH --mem=1G
 #SBATCH --job-name=create_nltt_files
 #SBATCH --output=create_nltt_files.log
-for filename in `ls out_*.RDa`
+for filename in $(find . | egrep ".*\.RDa")
 do
   from=$filename
   to=`echo $from | sed 's/out_/nltt_/'`
