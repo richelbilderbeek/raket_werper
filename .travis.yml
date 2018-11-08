@@ -1,0 +1,44 @@
+language: r
+cache: packages
+
+r_packages:
+  - devtools
+  - ggplot2
+  - hunspell
+  - xml2
+
+r_github_packages:
+  - jimhester/covr
+  - jimhester/lintr
+  - richelbilderbeek/babette
+  - richelbilderbeek/beastier
+  - richelbilderbeek/beautier
+  - richelbilderbeek/mauricer
+  - richelbilderbeek/PBD/PBD # Bleeding-edge version
+  - richelbilderbeek/pirouette
+  - richelbilderbeek/raket
+  - richelbilderbeek/tracerer
+  - MangoTheCat/goodpractice
+  - KlausVigo/phangorn
+  - ropensci/spelling
+
+script:
+  - ./scripts/create_input_files_general
+  # Java
+  - sudo apt-get install -qq oracle-java8-installer # Java 8
+  - sudo apt-get install oracle-java8-set-default
+  - Rscript -e "beastier::install_beast2()"
+  - Rscript -e 'mauricer::mrc_install("NS")'
+  - ./scripts/create_output_files
+  - ./scripts/create_nltt_files
+  - ./scripts/nltt_files_to_csv
+  - ./scripts/to_long
+  - ./scripts/rkt_plot
+
+after_success:
+  - pwd
+  - cd data; find .
+
+after_failure:
+  - pwd
+  - cd data; find .
