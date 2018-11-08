@@ -12,7 +12,7 @@ for filename in $(find . | egrep ".*\.RDa")
 do
   from=$filename
   to=`echo $from | sed 's/out_/nltt_/'`
-  #echo $from
+  echo $from
   #echo $to
-  sbatch ./create_nltt_file $from $to
+  ./create_nltt_file $from $to
 done
