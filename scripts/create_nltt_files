@@ -1,5 +1,6 @@
 #!/bin/bash
 # Process all .RDa files
+# Must be called from root folder
 # Peregrine directives:
 #SBATCH --time=1:00:00
 #SBATCH --nodes=1
@@ -14,5 +15,6 @@ do
   to=`echo $from | sed 's/out_/nltt_/'`
   echo $from
   #echo $to
-  ./create_nltt_file $from $to
+  # Must be called from root folder
+  ./scripts/create_nltt_file $from $to
 done

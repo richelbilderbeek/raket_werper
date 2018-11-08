@@ -1,5 +1,6 @@
 #!/bin/bash
 # Process all .RDa files
+# Must be called from root folder
 # Peregrine directives:
 #SBATCH --time=1:00:00
 #SBATCH --nodes=1
@@ -11,5 +12,6 @@
 for filename in $(find . | egrep ".*\.RDa")
 do
   echo $filename
-  ./create_output_file $filename
+  # Must be called from root folder
+  ./scripts/create_output_file $filename
 done
