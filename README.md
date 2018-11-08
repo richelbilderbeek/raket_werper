@@ -5,17 +5,15 @@ Branch|[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)
 `master`|[![Build Status](https://travis-ci.org/richelbilderbeek/raket_werper.svg?branch=master)](https://travis-ci.org/richelbilderbeek/raket_werper)
 `develop`|[![Build Status](https://travis-ci.org/richelbilderbeek/raket_werper.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/raket_werper)
 
-`raket` experiment scripts and storage.
+`raket_werper` (EN: 'rocket launcher') contains 
+the `raket` (EN: 'rocket') experiment scripts 
+and stores the results.
 
 Has the following folder structure:
 
  * `scripts`: contains the scripts
-
-Should create the following folder structure:
-
- * `scripts`: contains the scripts
- * `data`: contains the simulation data
- * `results`: contains the simulation results
+ * `data`: contains the simulation data (to be created)
+ * `results`: contains the simulation results (to be created)
 
 ## Cluster usage
 
