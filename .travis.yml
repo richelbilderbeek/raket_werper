@@ -30,7 +30,7 @@ script:
   - sudo apt-get install oracle-java8-set-default
   - ./scripts/1_install_raket
   - ./scripts/2_create_input_files_general
-  - ./scripts/3_create_output_files
+  - ./scripts/3_create_posterior_filess
   - ./scripts/4_create_nltt_files
   - ./scripts/5_nltt_files_to_csv
   - ./scripts/6_to_long
