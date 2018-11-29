@@ -17,22 +17,22 @@ Has the following folder structure:
 
 ## Cluster usage
 
- * `sbatch ./scripts/install_raket`
- * `sbatch ./scripts/create_input_files_general`
- * `sbatch ./scripts/create_output_files`
- * `sbatch ./scripts/create_nltt_files`
- * `sbatch ./scripts/nltt_files_to_csv`
- * `sbatch ./scripts/to_long`
- * `sbatch ./scripts/create_fig_1`
+ * `sbatch ./scripts/1_install_raket`
+ * `sbatch ./scripts/2_create_input_files_general`
+ * `sbatch ./scripts/3_create_output_files`
+ * `sbatch ./scripts/4_create_nltt_files`
+ * `sbatch ./scripts/5_nltt_files_to_csv`
+ * `sbatch ./scripts/6_to_long`
+ * `sbatch ./scripts/7_create_fig_1`
 
 ## Local usage
 
- * `./scripts/install_raket`
- * `./scripts/create_input_files_general`
- * `./scripts/create_output_files`
- * `./scripts/create_nltt_files`
- * `./scripts/nltt_files_to_csv`
- * `./scripts/to_long`
- * `./scripts/create_fig_1`
+ * `./scripts/1_install_raket`
+ * `./scripts/2_create_input_files_general`
+ * `./scripts/3_create_output_files`
+ * `./scripts/4_create_nltt_files`
+ * `./scripts/5_nltt_files_to_csv`
+ * `./scripts/6_to_long`
+ * `./scripts/7_create_fig_1`
 
 See [.travis.yml](.travis.yml) for the complete usage.

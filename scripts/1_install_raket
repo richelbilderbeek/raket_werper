@@ -22,3 +22,4 @@ Rscript -e 'devtools::install_github("richelbilderbeek/pirouette", ref = "develo
 Rscript -e 'devtools::install_github("richelbilderbeek/PBD/PBD", ref = "master")'
 Rscript -e 'devtools::install_github("richelbilderbeek/raket", ref = "develop")'
 Rscript -e 'beastier::install_beast2()'
+Rscript -e 'mauricer::mrc_install("NS")'
