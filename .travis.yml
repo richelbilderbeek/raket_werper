@@ -25,7 +25,6 @@ r_github_packages:
   - ropensci/spelling
 
 script:
-  - ./scripts/create_input_files_general
   # Java
   - sudo apt-get install -qq oracle-java8-installer # Java 8
   - sudo apt-get install oracle-java8-set-default
