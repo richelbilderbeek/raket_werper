@@ -19,7 +19,7 @@ Has the following folder structure:
 
  * `sbatch ./scripts/1_install_raket`
  * `sbatch ./scripts/2_create_input_files_general`
- * `sbatch ./scripts/3_create_posterior_filess`
+ * `sbatch ./scripts/3_create_posterior_files`
  * `sbatch ./scripts/4_create_nltt_files`
  * `sbatch ./scripts/5_nltt_files_to_csv`
  * `sbatch ./scripts/6_to_long`
@@ -29,7 +29,7 @@ Has the following folder structure:
 
  * `./scripts/1_install_raket`
  * `./scripts/2_create_input_files_general`
- * `./scripts/3_create_posterior_filess`
+ * `./scripts/3_create_posterior_files`
  * `./scripts/4_create_nltt_files`
  * `./scripts/5_nltt_files_to_csv`
  * `./scripts/6_to_long`

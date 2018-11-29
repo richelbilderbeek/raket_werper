@@ -23,21 +23,24 @@ q()
 sbatch install_raket
 ```
 
-When this is done, create the parameter files:
+When this is done, create the parameter files, 
+from the `raket_werper` root folder:
 
 ```
 # Use one of these two:
-sbatch create_input_files_general
-sbatch create_input_files_sampling # Does not work yet
+sbatch ./scripts/create_input_files_general
+sbatch ./scripts/create_input_files_sampling # Does not work yet
 ```
 
-The parameter files will be created locally and have names `1.RDa` to approx `9999.RDa`.
+The parameter files will be created in the folder `data`
+and will have names `1.csv`, `2.csv`, etc.
+
 For doing only a subset of the experiment, delete irrelevant parameter files.
 
 To start the main experiment (and most time consuming step):
 
 ```
-sbatch create_posterior_filess
+sbatch create_posterior_files
 ```
 
 The output files will be created locally and have names `out_1.RDa` to approx `out_9999.RDa`.
@@ -77,7 +80,7 @@ Step|Function|Description
 0|`install_raket`|Install `raket`, its dependencies, and BEAST2
 1.1|`create_input_files_general`|Create all `.RDa` input/parameter files to do a general mapping
 1.2|`create_input_files_sampling`|Create all `.RDa` input/parameter files to investigate the effect of sampling
-2|`create_posterior_filess`|Run all simulations
+2|`create_posterior_files`|Run all simulations
 2.1|`create_posterior_files`|Run one simulation, store all info (such as all posterior phylogenies) as `.RDa`
 3|`create_nltt_files`|Extract nLTT values from all output files
 3.1|`create_nltt_file`|Extract nLTT values from one output file, store parameters and nLTTs as `.RDa`
