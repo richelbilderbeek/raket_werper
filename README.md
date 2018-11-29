@@ -23,7 +23,7 @@ Has the following folder structure:
  * `sbatch ./scripts/create_nltt_files`
  * `sbatch ./scripts/nltt_files_to_csv`
  * `sbatch ./scripts/to_long`
- * `sbatch ./scripts/rkt_plot`
+ * `sbatch ./scripts/create_fig_1`
 
 ## Local usage
 
@@ -33,6 +33,6 @@ Has the following folder structure:
  * `./scripts/create_nltt_files`
  * `./scripts/nltt_files_to_csv`
  * `./scripts/to_long`
- * `./scripts/rkt_plot`
+ * `./scripts/create_fig_1`
 
 See [.travis.yml](.travis.yml) for the complete usage.

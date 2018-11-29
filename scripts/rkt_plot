@@ -6,9 +6,9 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --ntasks=1
 #SBATCH --mem=1G
-#SBATCH --job-name=rkt_plot
-#SBATCH --output=rkt_plot.log
+#SBATCH --job-name=create_fig_1
+#SBATCH --output=create_fig_1.log
 module load GCCcore/4.9.3 
 module load XZ/5.2.2-foss-2016a
 module load R
-Rscript -e 'raket::rkt_plot(pdf_filename = "result.pdf")'
+Rscript -e 'raket::create_fig_1(pdf_filename = "result.pdf")'

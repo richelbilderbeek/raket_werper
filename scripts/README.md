@@ -65,7 +65,7 @@ sbatch to_long
 This will result in a file named `result_long.csv`
 
 ```
-sbatch rkt_plot
+sbatch create_fig_1
 ```
 
 This will result in a file named `result.pdf`
@@ -83,6 +83,6 @@ Step|Function|Description
 3.1|`create_nltt_file`|Extract nLTT values from one output file, store parameters and nLTTs as `.RDa`
 4|`nltt_files_to_csv`|Merge all nLTT values into one `.csv` file
 5|`to_long`|After reading the `.csv` with `read.csv()`, convert data frame to tidy data in the long form
-6|`rkt_plot`|Plot the tidy data in long form as a violin plot, depends on sampling method
+6|`create_fig_1`|Plot the tidy data in long form as a violin plot, depends on sampling method
 
 
