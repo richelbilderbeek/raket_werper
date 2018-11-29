@@ -28,11 +28,12 @@ script:
   - sudo apt-get install -qq oracle-java8-installer # Java 8
   - sudo apt-get install oracle-java8-set-default
   - ./scripts/1_install_raket
-  - ./scripts/create_output_files
-  - ./scripts/create_nltt_files
-  - ./scripts/nltt_files_to_csv
-  - ./scripts/to_long
-  - ./scripts/rkt_plot
+  - ./scripts/2_create_input_files_general
+  - ./scripts/3_create_output_files
+  - ./scripts/4_create_nltt_files
+  - ./scripts/5_nltt_files_to_csv
+  - ./scripts/6_to_long
+  - ./scripts/7_create_fig_1
 
 after_success:
   - pwd
