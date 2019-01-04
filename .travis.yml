@@ -12,7 +12,7 @@ r_github_packages:
   - Giappo/mbd
   - jimhester/covr
   - jimhester/lintr
-  - richelbilderbeek/babette
+  - ropensci/babette
   - ropensci/beastier
   - ropensci/beautier
   - richelbilderbeek/becosys
