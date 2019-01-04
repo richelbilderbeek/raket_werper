@@ -15,7 +15,7 @@ module load R
 Rscript -e 'devtools::install_github("KlausVigo/phangorn", ref = "devel")'
 Rscript -e 'devtools::install_github("richelbilderbeek/nLTT", ref = "develop")'
 Rscript -e 'devtools::install_github("ropensci/beautier", ref = "develop")'
-Rscript -e 'devtools::install_github("richelbilderbeek/beastier", ref = "develop")'
+Rscript -e 'devtools::install_github("ropensci/beastier", ref = "develop")'
 Rscript -e 'devtools::install_github("ropensci/tracerer", ref = "develop")'
 Rscript -e 'devtools::install_github("richelbilderbeek/babette", ref = "develop")'
 Rscript -e 'devtools::install_github("richelbilderbeek/pirouette", ref = "develop")'
