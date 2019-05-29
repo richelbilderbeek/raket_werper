@@ -12,10 +12,10 @@ r_github_packages:
   - Giappo/mbd
   - jimhester/covr
   - jimhester/lintr
-  - ropensci/babette
   - ropensci/beastier
-  - richelbilderbeek/becosys
   - ropensci/mauricer
+  - ropensci/babette
+  - richelbilderbeek/becosys
   #- richelbilderbeek/PBD/PBD # Bleeding-edge version
   - richelbilderbeek/pirouette@richel
   - richelbilderbeek/raket@develop
