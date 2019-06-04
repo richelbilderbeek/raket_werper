@@ -12,20 +12,16 @@ r_github_packages:
   - Giappo/mbd
   - jimhester/covr
   - jimhester/lintr
-  - ropensci/beautier@develop
-  - ropensci/beastier
   - ropensci/mauricer
   - ropensci/babette
   - richelbilderbeek/ribir
   - richelbilderbeek/mcbette
   - richelbilderbeek/becosys
-  #- richelbilderbeek/PBD/PBD # Bleeding-edge version
-  - richelbilderbeek/pirouette@richel
+  - richelbilderbeek/pirouette
   - richelbilderbeek/raket@develop
   - MangoTheCat/goodpractice
   - KlausVigo/phangorn
   - ropensci/spelling
-  # - xl0418/dododo
 
 before_install:
   - echo $TRAVIS_R_VERSION_STRING
