@@ -35,6 +35,7 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then R CMD javareconf; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then R --quiet -e 'install.packages("rJava", type="source", repos="http://cran.us.r-project.org")'; fi
 
+
 script:
   - ./scripts/1_install_raket
   - ./scripts/2_create_input_files_general
