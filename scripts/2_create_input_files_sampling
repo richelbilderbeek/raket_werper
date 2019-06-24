@@ -1,5 +1,15 @@
 #!/bin/bash
-# Create input files
+# Script to create the raket input files
+# on the Peregrine computer cluster.
+#
+# Usage, locally:
+#
+#   ./scripts/2_create_input_files_sampling
+#
+# Usage, on Peregrine:
+#
+#   sbatch ./scripts/2_create_input_files_sampling
+#
 # Peregrine directives:
 #SBATCH --time=100:00:00
 #SBATCH --nodes=1
@@ -8,7 +18,7 @@
 #SBATCH --mem=1G
 #SBATCH --job-name=create_input_files_sampling
 #SBATCH --output=create_input_files_sampling.log
-module load GCCcore/4.9.3 
-module load XZ/5.2.2-foss-2016a
+#module load GCCcore/4.9.3 
+#module load XZ/5.2.2-foss-2016a
 module load R
 Rscript -e 'raket::create_input_files_sampling(sampling_params_set = raket::create_sampling_params_set(n_replicates = 10))'
