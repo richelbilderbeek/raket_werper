@@ -39,11 +39,7 @@ before_install:
 script:
   - ./scripts/1_install_raket
   - ./scripts/2_create_input_files_general
-  - #./scripts/3_create_posterior_files # NO! Call pirouette here
-  - #./scripts/4_create_nltt_files
-  - #./scripts/5_nltt_files_to_csv
-  - #./scripts/6_to_long
-  - #./scripts/7_create_fig_1
+  - ./scripts/2_create_input_files_sampling
 
 after_success:
   - pwd
