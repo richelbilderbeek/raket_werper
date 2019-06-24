@@ -3,11 +3,11 @@
 #
 # Usage, locally:
 #
-#   ./scripts/3_run_razzo
+#   ./scripts/3_run_raket
 #
 # Usage, on Peregrine:
 #
-#   sbatch ./scripts/3_run_razzo
+#   sbatch ./scripts/3_run_raket
 #
 # Peregrine directives:
 #SBATCH --time=1:00:00
@@ -15,10 +15,10 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --ntasks=1
 #SBATCH --mem=1G
-#SBATCH --job-name=3_run_razzo
-#SBATCH --output=3_run_razzo.log
-module load GCCcore/4.9.3 
-module load XZ/5.2.2-foss-2016a
+#SBATCH --job-name=3_run_raket
+#SBATCH --output=3_run_raket.log
+#module load GCCcore/4.9.3 
+#module load XZ/5.2.2-foss-2016a
 module load R
 module load MPFR
 
@@ -30,7 +30,7 @@ if [[ "$HOSTNAME" == "peregrine.hpc.rug.nl" ]]; then
   for filename in $(find . | egrep "parameters\.RDa")
   do
     echo $filename
-    sbatch ./scripts/run_r_cmd "razzo::run_razzo_from_file(\"$filename\")"
+    sbatch ./scripts/run_r_cmd "raket::run_raket_from_file(\"$filename\")"
   done
 
 elif [[ "$HOSTNAME" =~ ^pg-node.*$ ]]; then
@@ -39,7 +39,7 @@ elif [[ "$HOSTNAME" =~ ^pg-node.*$ ]]; then
   for filename in $(find . | egrep "parameters\.RDa")
   do
     echo $filename
-    sbatch ./scripts/run_r_cmd "razzo::run_razzo_from_file(\"$filename\")"
+    sbatch ./scripts/run_r_cmd "raket::run_raket_from_file(\"$filename\")"
   done
 
 elif [[ "$HOSTNAME" == "sonic" ]]; then
@@ -48,7 +48,7 @@ elif [[ "$HOSTNAME" == "sonic" ]]; then
   for filename in $(find . | egrep "parameters\.RDa")
   do
     echo $filename
-    ./scripts/run_r_cmd "razzo::run_razzo_from_file(\"$filename\")"
+    ./scripts/run_r_cmd "raket::run_raket_from_file(\"$filename\")"
   done
 
 else
@@ -57,7 +57,7 @@ else
   for filename in $(find . | egrep "parameters\.RDa")
   do
     echo $filename
-    ./scripts/run_r_cmd "razzo::run_razzo_from_file(\"$filename\")"
+    ./scripts/run_r_cmd "raket::run_raket_from_file(\"$filename\")"
   done
 
 fi
