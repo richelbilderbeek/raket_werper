@@ -16,6 +16,7 @@ r_github_packages:
   - ropensci/babette
   - richelbilderbeek/ribir
   - richelbilderbeek/mcbette
+  - richelbilderbeek/peregrine
   - richelbilderbeek/becosys
   - richelbilderbeek/pirouette
   - richelbilderbeek/raket@richel
