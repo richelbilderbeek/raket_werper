@@ -5,6 +5,7 @@
 #
 #   sbatch run_r_script "print(\"hello\")"
 #
+#SBATCH --partition=gelifes
 #SBATCH --time=10:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1

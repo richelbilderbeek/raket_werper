@@ -11,6 +11,7 @@
 #   sbatch ./scripts/2_create_input_files_sampling
 #
 # Peregrine directives:
+#SBATCH --partition=gelifes
 #SBATCH --time=100:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
