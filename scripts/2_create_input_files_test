@@ -1,0 +1,23 @@
+#!/bin/bash
+# Script to create the raket input files
+# on the Peregrine computer cluster.
+#
+# Usage, locally:
+#
+#   ./scripts/2_create_input_files_test
+#
+# Usage, on Peregrine:
+#
+#   sbatch ./scripts/2_create_input_files_test
+#
+# Peregrine directives:
+#SBATCH --partition=gelifes
+#SBATCH --time=1:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks=1
+#SBATCH --mem=1G
+#SBATCH --job-name=2_create_input_files_test
+#SBATCH --output=2_create_input_files_test.log
+module load R
+Rscript -e 'raket::create_input_files_test()'
