@@ -15,6 +15,13 @@ Has the following folder structure:
  * `data`: contains the simulation data (to be created)
  * `results`: contains the simulation results (to be created)
 
+## Data
+
+ * [20190811](http://richelbilderbeek.nl/raket_werper_20190811.zip)
+   minimal runs, most fail
+ * [20190812](http://richelbilderbeek.nl/raket_werper_20190812.zip)
+   minimal runs, most fail
+
 ## Cluster usage
 
  * `sbatch ./scripts/1_install_raket`
