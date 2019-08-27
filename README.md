@@ -25,6 +25,8 @@ Has the following folder structure:
    minimal runs, all fail, only `parameters.RDa` in each folder
  * [20190816](http://richelbilderbeek.nl/raket_werper_20190816.zip)
    minimal runs, all fail, half of all files in each folder
+ * [20190827](http://richelbilderbeek.nl/raket_werper_20190827.zip)
+   minimal runs
 
 ## Cluster usage
 
