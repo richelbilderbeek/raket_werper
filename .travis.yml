@@ -49,6 +49,7 @@ script:
   - ./scripts/3_run_raket
   - ./scripts/7_create_nltt_stats_file.sh
   - ./scripts/8_create_esses_files.sh
+  - ./scripts/9_create_marg_liks_file.sh
 
 after_success:
   - pwd
