@@ -20,4 +20,4 @@
 #SBATCH --job-name=2_create_input_files_test
 #SBATCH --output=2_create_input_files_test.log
 module load R
-Rscript -e 'raket::create_input_files_test(raket::create_test_params_set(getwd()))'
+Rscript -e 'raket::create_input_files_test(raket::create_test_params_set(project_folder_name = getwd()))'

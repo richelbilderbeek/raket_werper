@@ -20,4 +20,4 @@
 #SBATCH --job-name=2_create_input_files_general
 #SBATCH --output=2_create_input_files_general.log
 module load R
-Rscript -e 'raket::create_input_files_general(raket::create_general_params_set(n_replicates = 2))'
+Rscript -e 'raket::create_input_files_general(raket::create_general_params_set(project_folder_name = getwd(), n_replicates = 2))'
