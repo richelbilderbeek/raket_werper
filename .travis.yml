@@ -43,9 +43,10 @@ before_install:
 
 script:
   - ./scripts/1_install_raket
-  - ./scripts/2_create_input_files_general
+  - ./scripts/2_create_input_files_test
+  #- ./scripts/2_create_input_files_general
   # - ./scripts/2_create_input_files_sampling
-  #- ./scripts/3_run_raket
+  - ./scripts/3_run_raket
 
 after_success:
   - pwd
