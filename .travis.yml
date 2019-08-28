@@ -47,6 +47,8 @@ script:
   #- ./scripts/2_create_input_files_general
   # - ./scripts/2_create_input_files_sampling
   - ./scripts/3_run_raket
+  - ./scripts/7_create_nltt_stats_file.sh
+  - ./scripts/8_create_esses_files.sh
 
 after_success:
   - pwd
