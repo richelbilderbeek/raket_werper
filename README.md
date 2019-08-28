@@ -26,7 +26,8 @@ Has the following folder structure:
  * [20190816](http://richelbilderbeek.nl/raket_werper_20190816.zip)
    minimal runs, all fail, half of all files in each folder
  * [20190827](http://richelbilderbeek.nl/raket_werper_20190827.zip)
-   minimal runs
+   minimal runs, 
+   with added [results](http://richelbilderbeek.nl/20190827_raket_werper_results.zip)
 
 ## Cluster usage
 
