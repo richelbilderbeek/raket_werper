@@ -50,8 +50,10 @@ script:
 
 after_success:
   - pwd
-  - cd data; find .
+  - cd data; find . ; cd ..
+  - cd result ; find . ; cd ..
 
 after_failure:
   - pwd
-  - cd data; find .
+  - cd data; find . ; cd ..
+  - cd result ; find . ; cd ..
