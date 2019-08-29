@@ -28,6 +28,8 @@ Has the following folder structure:
  * [20190827](http://richelbilderbeek.nl/raket_werper_20190827.zip)
    minimal runs, 
    with added [results](http://richelbilderbeek.nl/20190827_raket_werper_results.zip)
+ * [20190829](http://richelbilderbeek.nl/raket_werper_20190829.zip)
+   full run with 1 replicate
 
 ## Cluster usage
 
