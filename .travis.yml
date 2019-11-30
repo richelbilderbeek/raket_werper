@@ -20,9 +20,10 @@ r_github_packages:
   - richelbilderbeek/ribir
   - richelbilderbeek/mcbette
   - richelbilderbeek/becosys
+  - thijsjanzen/nodeSub
   - richelbilderbeek/pirouette
   - richelbilderbeek/peregrine
-  - richelbilderbeek/raket@richel
+  - richelbilderbeek/raket
   - rsetienne/PBD/PBD
   - MangoTheCat/goodpractice
   - KlausVigo/phangorn
