@@ -22,7 +22,6 @@ r_github_packages:
   - richelbilderbeek/raket
   - rsetienne/PBD/PBD
   - MangoTheCat/goodpractice
-  - KlausVigo/phangorn
   - ropensci/spelling
 
 before_install:
