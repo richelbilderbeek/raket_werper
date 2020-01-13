@@ -6,7 +6,6 @@ r_github_packages:
   - Giappo/mbd
   - jimhester/covr
   - jimhester/lintr
-  - ropensci/babette
   - richelbilderbeek/ribir
   - richelbilderbeek/mcbette
   - richelbilderbeek/becosys
